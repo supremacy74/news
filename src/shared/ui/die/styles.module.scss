@@ -1,0 +1,13 @@
+@import 'index';
+
+.die {
+  border-radius: 2.5rem;
+
+  padding: .75rem;
+
+  background: $bg-color-200;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

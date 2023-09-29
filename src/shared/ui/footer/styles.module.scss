@@ -1,0 +1,129 @@
+@import 'index';
+
+.footer {
+  background: $bg-color-400;
+
+  color: $text-color-100;
+}
+
+.content {
+  display: grid;
+
+  grid-template-areas: 'navbar' 'meta' 'copyright';
+
+  gap: 2.375rem;
+
+  padding-block: 1.5rem;
+
+  @media (min-width: 1200px) {
+    grid-template-areas: 'copyright navbar meta';
+
+    padding-block: 2.5rem;
+  }
+}
+
+.copyright {
+  grid-area: copyright;
+
+  display: flex;
+
+  gap: 1.25rem;
+
+  @media (min-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.copyright p {
+  font-size: .8125rem;
+}
+
+.copyright br {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.navbar,
+.list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.0rem;
+}
+
+.navbar {
+  @media (min-width: 1200px) {
+    flex-direction: row;
+
+    gap: 5rem;
+  }
+}
+
+.contacts {
+  grid-area: contacts;
+}
+
+.contacts,
+.link {
+  font-size: .875rem;
+}
+
+.contacts br {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.meta {
+  grid-area: meta;
+
+  @media (min-width: 1200px) {
+    display: grid;
+
+    grid-template-areas: 'contacts contacts' 'telegram subscribe';
+
+    column-gap: 6.5rem;
+    row-gap: 1.0rem;
+  }
+}
+
+.meta a {
+  color: $text-color-300;
+}
+
+.telegram {
+  margin-top: 1.0rem;
+
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  color: $text-color-100 !important;
+
+  grid-area: telegram;
+
+  @media (min-width: 1200px) {
+    margin-top: 0;
+  }
+}
+
+.telegram img {
+  filter: invert(100%);
+}
+
+.subscribe {
+  margin-top: 2.375rem;
+
+  grid-area: subscribe;
+
+  @media (min-width: 1200px) {
+    margin-top: 0;
+  }
+}

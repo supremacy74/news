@@ -1,0 +1,47 @@
+@import 'index';
+
+.button {
+  transition: $transition;
+}
+
+.default {
+  background: $bg-color-400;
+}
+
+.default:hover {
+  background: $bg-color-600;
+}
+
+.default:disabled {
+  background: $bg-color-700;
+}
+
+.accent {
+  background: $bg-color-500;
+}
+
+.accent:hover {
+  background: $bg-color-800;
+}
+
+.accent:disabled {
+  background: $bg-color-900;
+}
+
+.unselected {
+  color: $text-color-200;
+
+  background: $bg-color-200;
+
+  transition: $transition;
+}
+
+.unselected:hover {
+  background: $bg-color-100;
+}
+
+.selected {
+  color: $text-color-100;
+
+  background: $bg-color-400;
+}

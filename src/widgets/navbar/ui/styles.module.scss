@@ -1,0 +1,98 @@
+@import 'index';
+
+.navbar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background: $neutral-color-100;
+
+  z-index: 50;
+
+  padding: 3.5rem 1.0rem;
+
+  transition: $transition;
+
+  overflow: auto;
+
+  @media (min-width: 1200px) {
+    background: transparent;
+
+    position: static;
+
+    padding: 0;
+
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+.hidden {
+  @media (max-width: 1200px) {
+    top: -100%;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    height: 0;
+  }
+}
+
+.list {
+  width: min(100%, 30.25rem);
+
+  margin: 0 auto;
+
+  @media (min-width: 1200px) {
+    width: fit-content;
+
+    margin: 0;
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+
+  gap: .75rem;
+
+  padding: .75rem 1.25rem;
+
+  transition: $transition;
+
+  border-radius: .75rem;
+}
+
+//.unselected:hover {
+//  background: $bg-color-200;
+//
+//  @media (min-width: 1200px) {
+//    background: $bg-color-100;
+//  }
+//}
+
+.selected {
+  background: $bg-color-400;
+
+  color: $text-color-100;
+}
+
+.button {
+  position: absolute;
+
+  top: 1.0rem;
+  right: 1.0rem;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.icon {
+  width: 2.0rem;
+  height: 2.0rem;
+}

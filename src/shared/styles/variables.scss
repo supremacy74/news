@@ -1,0 +1,31 @@
+$main-color-300: #262626;
+$main-color-200: #464646;
+$main-color-100: #727272;
+
+$accent-color-300: #FF6B00;
+$accent-color-200: #FF842A;
+$accent-color-100: #FFA96B;
+
+$neutral-color-400: #9C9C9C;
+$neutral-color-300: #DEDEDE;
+$neutral-color-200: #F7F7F7;
+$neutral-color-100: #FFFFFF;
+
+$additional-color-200: #E15D5D;
+$additional-color-100: #29883E;
+
+$text-color-300: $accent-color-300;
+$text-color-200: $main-color-300;
+$text-color-100: $neutral-color-100;
+
+$bg-color-900: $accent-color-100;
+$bg-color-800: $accent-color-200;
+$bg-color-700: $main-color-100;
+$bg-color-600: $main-color-200;
+$bg-color-500: $accent-color-300;
+$bg-color-400: $main-color-300;
+$bg-color-300: $neutral-color-400;
+$bg-color-200: $neutral-color-200;
+$bg-color-100: $neutral-color-100;
+
+$transition: 200ms all ease-in-out;

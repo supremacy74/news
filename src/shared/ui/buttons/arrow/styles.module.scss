@@ -1,0 +1,29 @@
+@import 'index';
+
+.button {
+  border-radius: 50%;
+
+  width: 2.0rem;
+  height: 2.0rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.second {
+  background: $bg-color-100;
+}
+
+.second:hover {
+  background: $bg-color-200;
+}
+
+.second img {
+  filter: invert(100%);
+}

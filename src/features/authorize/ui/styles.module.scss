@@ -1,0 +1,23 @@
+@import 'index';
+
+.button {
+  display: none;
+
+  @media (min-width: 992px) {
+    display: block;
+
+    padding: .75rem 1.0rem;
+
+    background: $neutral-color-300;
+
+    font-size: .875rem;
+    font-weight: 500;
+
+    border-radius: .5rem;
+  }
+
+}
+
+.button:hover {
+  background: $neutral-color-200;
+}

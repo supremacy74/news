@@ -1,0 +1,23 @@
+@import 'index';
+
+.wrapper {
+  background: $neutral-color-200;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  min-width: 22.5rem;
+}
+
+.main {
+  flex: 1;
+
+  padding-block: 1.5rem 2.5rem;
+}
+
+.content {
+  display: flex;
+
+  gap: .75rem;
+}
